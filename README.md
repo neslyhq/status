@@ -6,12 +6,12 @@ purpose **outside** the platform being monitored ([Upptime](https://github.com/u
 
 Monitored endpoints:
 
-| Endpoint | URL |
-| --- | --- |
-| Site | https://nesly.net |
-| Console | https://console.nesly.net |
-| API | https://api.nesly.net/healthz |
-| Docs | https://nesly.net/docs/ |
+| Endpoint | URL                           |
+| -------- | ----------------------------- |
+| Site     | https://nesly.net             |
+| Console  | https://console.nesly.net     |
+| API      | https://api.nesly.net/healthz |
+| Docs     | https://nesly.net/docs/       |
 
 This README and the graphs below are regenerated automatically by the
 Upptime workflows; incident history appears as issues in this repository.
