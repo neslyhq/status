@@ -47,7 +47,7 @@ status-website:
   baseUrl: /
   name: nesly status
   introTitle: "Live status of **nesly**"
-  introMessage: Uptime and response times, measured every 5 minutes from outside our own infrastructure.
+  introMessage: Uptime and response times, measured from outside our own infrastructure.
   navbar:
     - title: Status
       href: /
