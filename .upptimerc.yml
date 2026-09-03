@@ -17,7 +17,8 @@ sites:
 status-website:
   # No custom domain yet: served at neslyhq.github.io/status. When the
   # Cloudflare token arrives, add `cname: status.nesly.net` and drop baseUrl.
-  baseUrl: /status
+  cname: status.nesly.net
+  baseUrl: /
   name: nesly status
   introTitle: "Live status of **nesly**"
   introMessage: Uptime and response times, measured every 5 minutes from outside our own infrastructure.
