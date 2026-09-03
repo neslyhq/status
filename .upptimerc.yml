@@ -37,6 +37,10 @@ status-website:
     .data{font-weight:500}
     .r label{color:#6b7280}.r input:checked+label{color:#111827}
     footer{color:#6b7280;font-size:13px;opacity:1}footer a{color:#6b7280}
+    article.up:not(.graph)::before,article.down:not(.graph)::before,article.degraded:not(.graph)::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:.6rem;vertical-align:middle;background:#16a34a}
+    article.down:not(.graph)::before{background:#dc2626}article.degraded:not(.graph)::before{background:#d97706}
+  js: |
+    (function(){var strip=function(){document.querySelectorAll('article.up,article.down,article.degraded').forEach(function(a){var t=a.childNodes[0];if(t&&t.nodeType===3){t.textContent=t.textContent.replace(/^[^A-Za-z0-9]+/,'');}});};new MutationObserver(strip).observe(document.documentElement,{childList:true,subtree:true});strip();})();
   # No custom domain yet: served at neslyhq.github.io/status. When the
   # Cloudflare token arrives, add `cname: status.nesly.net` and drop baseUrl.
   cname: status.nesly.net
